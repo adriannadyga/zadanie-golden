@@ -27,6 +27,15 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
+/*colors*/
+$white: #ffffff;
+$yellow: #fed136;
+$black: #222222;
+$grey: #777777;
+
+/*fonts*/
+$fontM: 'Montserrat', sans-serif;
+
 body {
     margin: 0;
     .hero {
@@ -48,18 +57,18 @@ body {
             overflow: hidden;
             a {
                 text-decoration: none;
-                color: #ffffff;
+                color: $white;
                 padding: 0 20px;
                 font-size: 15px;
                 text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $fontM;
             }
         }
         .hero-text {
             position: absolute;
             width: 100%;
             text-align: center;
-            color: #ffffff;
+            color: $white;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -69,22 +78,66 @@ body {
             }
             h1 {
                 text-transform: uppercase;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $fontM;
                 font-size: 70px;
                 font-weight: 900;
             }
             button {
                 border: none;
-                color: #ffffff;
-                background-color: #fed136;
+                color: $white;
+                background-color: $yellow;
                 width: 242px;
                 height: 68px;
                 font-size: 18px;
-                font-family: 'Montserrat', sans-serif;
+                font-family: $fontM;
                 font-weight: 700;
                 text-transform: uppercase;
                 border-radius: 5px;
             }
         }
+    }
+    .services {
+        margin: 10%;
+        text-align: center;
+        h3 {
+            text-transform: uppercase;
+            font-family: $fontM;
+            font-weight: 800;
+            font-size: 40px;
+            color: $black;
+            margin: 0;
+        }
+        .italic {
+            font-family: $fontM;
+            font-style: italic;
+            font-size: 17px;
+            text-align: center;
+            color: $grey;
+            padding-bottom: 70px;
+        }
+        .btn {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 4px solid $yellow;
+            background-color: $white;
+            .fas {
+                font-size: 40px;
+                color: $yellow;
+            }
+        }
+        h4 {
+            font-size: 15px;
+            font-family: $fontM;
+            font-weight: 800;
+            color: $black;
+        }
+        p {
+            font-size: 15px;
+            font-family: $fontM;
+            color: $grey;
+            padding: 0 15px;
+        }
+
     }
 }
