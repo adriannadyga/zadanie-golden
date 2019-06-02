@@ -132,6 +132,7 @@ body .hero .hero-text button {
   font-weight: 700;
   text-transform: uppercase;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 body .services {
@@ -139,10 +140,10 @@ body .services {
   text-align: center;
 }
 
-body .services h3 {
+body .services h2 {
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 40px;
   color: #222222;
   margin: 0;
@@ -182,6 +183,60 @@ body .services p {
   font-family: "Montserrat", sans-serif;
   color: #777777;
   padding: 0 15px;
+}
+
+body .portfolio {
+  margin: 0 auto;
+  padding-top: 120px;
+  background-color: #F7F7F7;
+}
+
+body .portfolio .container {
+  margin: 0 230px 0 230px;
+  text-align: center;
+}
+
+body .portfolio .container h2 {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #222222;
+  margin: 0;
+}
+
+body .portfolio .container p {
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-size: 17px;
+  text-align: center;
+  color: #777777;
+  padding-bottom: 50px;
+}
+
+body .portfolio .container .backgr-white {
+  width: 304px;
+  height: 396px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+  background-color: #ffffff;
+}
+
+body .portfolio .container .backgr-white img {
+  width: 304px;
+  height: 304px;
+}
+
+body .portfolio .container .backgr-white h5 {
+  font-size: 18px;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0;
+}
+
+body .portfolio .container .backgr-white p {
+  margin: 0 auto;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

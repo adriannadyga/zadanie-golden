@@ -32,6 +32,7 @@ $white: #ffffff;
 $yellow: #fed136;
 $black: #222222;
 $grey: #777777;
+$background: #F7F7F7;
 
 /*fonts*/
 $fontM: 'Montserrat', sans-serif;
@@ -93,16 +94,17 @@ body {
                 font-weight: 700;
                 text-transform: uppercase;
                 border-radius: 5px;
+                cursor: pointer;
             }
         }
     }
     .services {
         margin: 10%;
         text-align: center;
-        h3 {
+        h2 {
             text-transform: uppercase;
             font-family: $fontM;
-            font-weight: 800;
+            font-weight: 700;
             font-size: 40px;
             color: $black;
             margin: 0;
@@ -138,6 +140,51 @@ body {
             color: $grey;
             padding: 0 15px;
         }
-
+    }
+    .portfolio {
+        margin: 0 auto;
+        padding-top: 120px;
+        background-color: $background;
+        .container {
+            margin: 0 230px 0 230px;
+            text-align: center;
+            h2 {
+                text-transform: uppercase;
+                font-family: $fontM;
+                font-weight: 700;
+                font-size: 40px;
+                color: $black;
+                margin: 0;
+            }
+            p {
+                font-family: $fontM;
+                font-style: italic;
+                font-size: 17px;
+                text-align: center;
+                color: $grey;
+                padding-bottom: 50px;
+            }
+            .backgr-white {
+                width: 304px;
+                height: 396px;
+                margin: 0 auto;
+                margin-bottom: 70px;
+                background-color: $white;
+                img {
+                    width: 304px;
+                    height: 304px;
+                }
+                h5 {
+                    font-size: 18px;
+                    color: $black;
+                    font-family: $fontM;
+                    margin-bottom: 0;
+                }
+                p {
+                    margin: 0 auto;
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
