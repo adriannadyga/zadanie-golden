@@ -33,6 +33,7 @@ $yellow: #fed136;
 $black: #222222;
 $grey: #777777;
 $background: #F7F7F7;
+$round: #f1f1f1;
 
 /*fonts*/
 $fontM: 'Montserrat', sans-serif;
@@ -183,6 +184,100 @@ body {
                 p {
                     margin: 0 auto;
                     font-size: 14px;
+                    color: $grey;
+                }
+            }
+        }
+    }
+    .about-us {
+        margin: 0 auto;
+        padding-top: 120px;
+        .container {
+            margin: 0 230px 0 230px;
+            h2 {
+                text-align: center;
+                text-transform: uppercase;
+                font-family: $fontM;
+                font-weight: 700;
+                font-size: 40px;
+                color: $black;
+                margin: 0;
+            }
+            p {
+                font-family: $fontM;
+                font-style: italic;
+                font-size: 17px;
+                text-align: center;
+                color: $grey;
+                padding-bottom: 50px;
+            }
+            .left {
+                text-align: right;
+                p {
+                    font-size: 14px;
+                    font-style: normal;
+                }
+            }
+            h5 {
+                font-size: 18px;
+                color: $black;
+                font-family: $fontM;
+                padding:0 30px 0 30px;
+                margin-bottom: 0;
+            }  
+            img {
+                border: 7px solid $round;
+                border-radius: 50%;
+                position: absolute;
+            }
+            .right {
+                text-align: right;
+            }
+        }  
+    }
+    .team {
+        margin: 0 auto;
+        padding-top: 120px;
+        background-color: $background;
+        .container {
+            margin: 0 230px 0 230px;
+            text-align: center;
+            h2 {
+                text-transform: uppercase;
+                font-family: $fontM;
+                font-weight: 700;
+                font-size: 40px;
+                color: $black;
+                margin: 0;
+            }
+            p {
+                font-family: $fontM;
+                font-style: italic;
+                font-size: 17px;
+                text-align: center;
+                color: $grey;
+                padding-bottom: 50px;
+            }
+            img {
+                border-radius: 50%;
+                border: 7px solid $white;
+                width: 250px;
+                height: 250px;
+            }
+            h5 {
+                font-size: 18px;
+                color: $black;
+                font-family: $fontM;
+                margin-bottom: 0;
+            }
+            button {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 3px solid $black;
+                background-color: $background;
+                .fab {
+                    font-size: 18px;
                 }
             }
         }

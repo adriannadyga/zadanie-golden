@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/*colors*/
+$white: #ffffff;
+$yellow: #fed136;
+$black: #222222;
+$grey: #777777;
+$background: #F7F7F7;
+$round: #f1f1f1;
+
+/*fonts*/
+$fontM: 'Montserrat', sans-serif;
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://github.com/adriannadyga/zadanie-golden/blob/master/images/Background%20Image.png?raw=true);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    .logo {
+        position: absolute;
+        left: 300px;
+        top: 70px;
+    }
+    .navbar {
+        position: absolute;
+        left: 850px;
+        top: 70px;
+        overflow: hidden;
+        a {
+            text-decoration: none;
+            color: $white;
+            padding: 0 20px;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-family: $fontM;
+        }
+    }
+    .hero-text {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        color: $white;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        h3 {
+            font-style: italic;
+            font-size: 40px;
+        }
+        h1 {
+            text-transform: uppercase;
+            font-family: $fontM;
+            font-size: 70px;
+            font-weight: 900;
+        }
+        button {
+            border: none;
+            color: $white;
+            background-color: $yellow;
+            width: 242px;
+            height: 68px;
+            font-size: 18px;
+            font-family: $fontM;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
